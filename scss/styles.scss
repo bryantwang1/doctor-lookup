@@ -1,0 +1,31 @@
+.item-display {
+  display: flex;
+  flex-direction: row;
+  width: 85vw;
+  margin: .2vw;
+  background-color: gray;
+  padding: 1vw;
+  img {
+    height: 100%;
+    align-self: center;
+    margin: inherit;
+  }
+  .detail-container {
+    display: flex;
+    flex-direction: column;
+    margin: inherit;
+    background-color: lightgray;
+    padding: .7vw;
+  }
+  ul {
+    margin-left: -10px;
+    li {
+      margin: inherit;
+    }
+  }
+  .gender-marker {
+    color: orange;
+    font-size: 2em;
+
+  }
+}
