@@ -16,8 +16,10 @@ _To run this web app you need Node.js installed._
           > npm install
           > browser install
 
-5. 
-6. Create a file in the top level of the project folder called `.env`
+
+5. Get an api key from https://developer.betterdoctor.com/
+6. Create a file in the top level of the project folder called `.env` and save it with this line: `exports.apiKey = "YOUR_KEY_HERE";`
+7. Run `gulp serve` in your console. Your browser should now be running the app.
 
 
 ## Technologies Used
