@@ -1,0 +1,22 @@
+{
+  "name": "doctor-lookup",
+  "description": "A simple web app for Epicodus to demonstrate knowledge of how to use APIs and Gulp.",
+  "main": "index.js",
+  "authors": [
+    "Bryant Wang"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.17.1"
+  }
+}
