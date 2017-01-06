@@ -29,12 +29,9 @@ function issueDisplay(results, doctorCount) {
     doctor.specialties.forEach(function(specialty) {
       $("#results-display").find("#doctor-" + doctorCount).append("<li>" + specialty.name + "</li>");
     });
-
-    //  $("#hider-" + doctorCount).fadeIn(1000).queue();
   });
 
   function fadeDoctorsIn() {
-    console.log("fading in");
     setTimeout(function() {
       savedCount++;
       if(savedCount <= doctorCount) {
@@ -48,16 +45,13 @@ function issueDisplay(results, doctorCount) {
 }
 
 $(function() {
-  console.log("ready");
   var newLookup = new Lookup();
   var userIssue = "";
 
   $("#issue-search").submit(function(event) {
-    console.log("first count: " + newLookup.doctorCount);
     event.preventDefault();
     $("#results-display").empty();
     newLookup.doctorCount = 0;
-    console.log("second count: " + newLookup.doctorCount);
 
     userIssue = $("#medical-issue").val();
     $("#medical-issue").val("");
@@ -67,7 +61,6 @@ $(function() {
 
   $(window).scroll(function() {
     if($(document).height() - $(window).height() == $(window).scrollTop()) {
-      console.log("third count: " + newLookup.doctorCount);
       newLookup.searchByIssue(userIssue, issueDisplay);
     }
   })

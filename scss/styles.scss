@@ -10,7 +10,7 @@ body {
 
 .container {
   background-color: $blue2;
-  padding-bottom: 3vh;
+  padding-bottom: 1vh;
   padding-top: 2vh;
   .separating-border {
     border-bottom: 1px solid lightgray;
@@ -86,4 +86,8 @@ body {
       font-size: 2em;
     }
   }
+}
+
+#bottom-filler {
+  height: 30vh;
 }
