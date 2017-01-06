@@ -11,15 +11,16 @@ _To run this web app you need Node.js installed._
 1. Clone this repository
 2. Open your console program(Terminal, Powershell, etc.)
 3. In your console, navigate to the cloned project folder
-4. Run the following:
+4. Get an api key from https://developer.betterdoctor.com/
+5. Create a file in the top level of the project folder called `.env` and save it with this line: `exports.apiKey = "YOUR_API_KEY_HERE";`
+6. Run the following:
 
           > npm install
           > browser install
+          > gulp build
+          > gulp serve
 
-
-5. Get an api key from https://developer.betterdoctor.com/
-6. Create a file in the top level of the project folder called `.env` and save it with this line: `exports.apiKey = "YOUR_KEY_HERE";`
-7. Run `gulp serve` in your console. Your browser should now be running the app.
+7. Your browser should now be running the app.
 
 
 ## Technologies Used
