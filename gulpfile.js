@@ -25,7 +25,7 @@ var buildProduction = utilities.env.production;
 gulp.task("concatScripts", function() {
   return gulp.src(["./js/*-interface.js"])
     .pipe(concat("allConcat.js"))
-    .pipe(gulp.dest("/tmp"));
+    .pipe(gulp.dest("./tmp"));
 });
 
 gulp.task("jsBrowserify", ["concatScripts"], function() {
@@ -89,7 +89,7 @@ gulp.task("serve", function() {
   gulp.watch(["*.html"], ["htmlBuild"]);
 });
 
-gulp.task("jsBuild", ["jsBrowserify", "jshinn"], function() {
+gulp.task("jsBuild", ["jsBrowserify", "jshint"], function() {
   browserSync.reload();
 });
 
